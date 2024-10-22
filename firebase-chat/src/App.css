@@ -1,0 +1,159 @@
+/* App.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Chat Room Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+  height: 60vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+form {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+}
+
+input:focus {
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #03dac5;
+}
+
+button[type="submit"]:hover {
+  background-color: #018786;
+}
+
+/* Message Styles */
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.sent {
+  justify-content: flex-end;
+}
+
+.received {
+  justify-content: flex-start;
+}
+
+.message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message.sent img {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.message p {
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 60%;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  margin: 0;
+}
+
+.message.sent p {
+  background-color: #6200ea;
+  color: white;
+}
+
+.message.received p {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+/* Sign-in and Sign-out buttons */
+.sign-in,
+.sign-out {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.sign-in:hover,
+.sign-out:hover {
+  background-color: #3700b3;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+}
